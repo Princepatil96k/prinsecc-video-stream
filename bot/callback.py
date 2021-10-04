@@ -46,12 +46,12 @@ async def cbstart(_, query: CallbackQuery):
                     "🌐 Terms & Condition", callback_data="cbinfo")
             ], [
                 InlineKeyboardButton(
-                    "💬 Group", url=f"https://t.me/{Veez.GROUP_NAME}"),
+                    "💬 Group", url=f"https://t.me/{STUDY_FLOWER_QUIZ_GROUP}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{Veez.CHANNEL_NAME}")
+                    "📣 Channel", url=f"https://t.me/{STUDY_FLOWER}")
             ], [
                 InlineKeyboardButton(
-                    "🧙🏻‍♂️ Owner", url=f"https://t.me/{Veez.OWNER_NAME}")
+                    "🧙🏻‍♂️ Owner", url=f"https://t.me/{Princepatil96k}")
             ], [
                 InlineKeyboardButton(
                     "📚 All Command List", callback_data="cblist")
@@ -130,7 +130,7 @@ async def cblist(_, query: CallbackQuery):
                     "🏡 Go Back", callback_data="cbstart")
             ]]
         ))
-
+JOIN @STUDY_FLOWER_QUIZ_GROUP @STUDY_FLOWER
 
 @Client.on_callback_query(filters.regex("cls"))
 async def close(_, query: CallbackQuery):
